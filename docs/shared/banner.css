@@ -1,0 +1,90 @@
+/* Universal banner shared across all 3 sites */
+:root{
+    --ub-bg: rgba(10,12,18,.72);
+    --ub-line: rgba(255,255,255,.12);
+    --ub-text: rgba(255,255,255,.92);
+    --ub-muted: rgba(255,255,255,.72);
+    --ub-pill: rgba(255,255,255,.06);
+  }
+  
+  .universal-banner{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    backdrop-filter: blur(12px);
+    background: var(--ub-bg);
+    border-bottom: 1px solid var(--ub-line);
+  }
+  
+  .universal-banner__inner{
+    width: min(1120px, 92vw);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 0;
+  }
+  
+  .universal-banner__brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--ub-text);
+    font-weight: 850;
+    letter-spacing: .2px;
+    white-space: nowrap;
+  }
+  
+  .universal-banner__dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d7a6ff, #7ee6d6);
+  }
+  
+  .universal-banner__nav{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .universal-banner__link{
+    text-decoration: none;
+    color: var(--ub-muted);
+    border: 1px solid transparent;
+    padding: 8px 10px;
+    border-radius: 999px;
+  }
+  
+  .universal-banner__link:hover{
+    background: rgba(255,255,255,.06);
+    color: var(--ub-text);
+  }
+  
+  .universal-banner__link.is-active{
+    color: var(--ub-text);
+    background: var(--ub-pill);
+    border-color: var(--ub-line);
+  }
+  
+  .universal-banner__chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid var(--ub-line);
+    color: var(--ub-muted);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 720px){
+    .universal-banner__inner{ align-items: flex-start; }
+    .universal-banner__chip{ display:none; }
+  }
+  
