@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Skin Studio | Esthetician Services</title>
+  <meta name="description" content="Luna Skin Studio — facials, waxing, brows, and glow-up skincare. Book a consultation or request an appointment in 24 hours." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">LS</span>
+        <span class="brand-name">Luna Skin Studio</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#proof">Results</a>
+        <a href="#quote" class="btn btn--small">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Glow-focused skincare • Bridgewater, NJ</p>
+          <h1>Your best skin, built on a simple routine.</h1>
+          <p class="lead">
+            Custom facials, gentle waxing, and brow shaping—designed for real schedules.
+            New clients get a free 10-minute consultation with any first service.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#quote">Start your glow-up</a>
+            <a class="btn btn--ghost" href="#services">See services</a>
+          </div>
+
+          <ul class="hero-badges" aria-label="Highlights">
+            <li>✨ Sensitive-skin friendly</li>
+            <li>⏱️ 60–75 minute sessions</li>
+            <li>🧴 Routine + product guidance</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Soft, modern skincare studio hero image placeholder">
+          <div class="hero-card-inner">
+            <div class="hero-card-top">
+              <div class="pill">Now booking</div>
+              <div class="pill pill--muted">Mon–Sat</div>
+            </div>
+            <div class="hero-card-mid">
+              <div class="stat">
+                <div class="stat-num">24h</div>
+                <div class="stat-label">Average reply time</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">4.9★</div>
+                <div class="stat-label">Client rating</div>
+              </div>
+            </div>
+            <div class="hero-card-bottom">
+              <p class="mini">
+                “My skin looked calm and glassy after the first facial. The routine was actually easy to follow.”
+              </p>
+              <p class="mini mini--muted">— Recent client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="subhead">Three core services that cover 90% of what most clients need—clean, simple, effective.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-media" aria-hidden="true">🫧</div>
+            <h3>Signature Facial</h3>
+            <p>
+              Deep cleanse, gentle exfoliation, targeted mask, and hydration.
+              Perfect for congestion, dullness, or “I need a reset.”
+            </p>
+            <ul class="list">
+              <li>60–75 minutes</li>
+              <li>Includes routine recs</li>
+              <li>Add-ons available</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-media" aria-hidden="true">🕯️</div>
+            <h3>Waxing</h3>
+            <p>
+              Comfortable, clean waxing with skin prep + aftercare guidance.
+              Great for maintaining smooth, irritation-free results.
+            </p>
+            <ul class="list">
+              <li>Brows, lip, chin</li>
+              <li>Underarm, bikini</li>
+              <li>Aftercare included</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-media" aria-hidden="true">🪞</div>
+            <h3>Brow Shape + Tint</h3>
+            <p>
+              Map, shape, and refine your brows for a natural lift. Optional tint for a fuller,
+              cleaner look without daily effort.
+            </p>
+            <ul class="list">
+              <li>Face-framing shape</li>
+              <li>Natural tint option</li>
+              <li>Low-maintenance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="section section--alt">
+      <div class="container">
+        <h2>Results clients actually want</h2>
+        <p class="subhead">Less redness. Smoother texture. A routine you’ll stick to.</p>
+
+        <div class="proof-grid">
+          <div class="proof">
+            <h3>Acne + Congestion</h3>
+            <p>Barrier-first care with gentle exfoliation and realistic weekly habits.</p>
+          </div>
+          <div class="proof">
+            <h3>Hyperpigmentation</h3>
+            <p>Brightening plan with SPF + consistent steps (no 10-step nonsense).</p>
+          </div>
+          <div class="proof">
+            <h3>Sensitive Skin</h3>
+            <p>Calming treatments, patch-safe products, and slower introductions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section">
+      <div class="container form-grid">
+        <div>
+          <h2>Request an appointment</h2>
+          <p class="subhead">
+            Fill this out and you’ll get a reply within <strong>24 hours</strong>.
+            If you’re not sure what to book, choose “Not sure” and we’ll recommend the right service.
+          </p>
+
+          <div class="note">
+            <strong>Lead magnet (reciprocity):</strong> Free 10-minute consultation for new clients.
+          </div>
+        </div>
+
+        <form id="leadForm" class="form" novalidate>
+          <label>
+            Full Name
+            <input name="name" type="text" autocomplete="name" required />
+            <span class="field-hint" data-error-for="name"></span>
+          </label>
+
+          <label>
+            Email Address
+            <input name="email" type="email" autocomplete="email" required />
+            <span class="field-hint" data-error-for="email"></span>
+          </label>
+
+          <label>
+            Service Interested In
+            <select name="service" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Signature Facial</option>
+              <option>Waxing</option>
+              <option>Brow Shape + Tint</option>
+              <option>Not sure (recommend for me)</option>
+            </select>
+            <span class="field-hint" data-error-for="service"></span>
+          </label>
+
+          <label>
+            Project Details
+            <textarea name="details" rows="4" placeholder="Skin concerns, timing, sensitivities, preferred days/times..."></textarea>
+          </label>
+
+          <label class="checkbox">
+            <input name="consent" type="checkbox" required />
+            <span>I agree to the <a href="./privacy.html">Privacy Policy</a>.</span>
+          </label>
+          <span class="field-hint" data-error-for="consent"></span>
+
+          <button class="btn" type="submit">Send Request</button>
+
+          <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+
+          <div class="backlinks">
+            <!-- Adjust these paths to match your repo’s actual structure -->
+            <a href="../index.html">← Back to Landing</a>
+            <a href="../design_style/">Design Style (Fluent/Metro) →</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Luna Skin Studio. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <span aria-hidden="true">|</span>
+        <a href="../index.html">Home</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

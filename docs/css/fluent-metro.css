@@ -152,6 +152,38 @@
     border-bottom-color: var(--metro-magenta);
   }
   
+  /* ================
+     HAMBURGER BUTTON
+     ================ */
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: var(--text-main);
+    border-radius: 999px;
+    transition: 0.2s ease;
+  }
+  
+  /* Animate into X when open */
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
   main {
     flex: 1;
     padding: 2rem 0 3rem;
@@ -745,8 +777,7 @@
       grid-column: span 12;
     }
   
-    /* Unscrunch the visual system row on medium screens:
-       each tile gets full width instead of being squeezed side-by-side. */
+    /* avoid scrunched bottom row on medium screens */
     .tile--palette,
     .tile--specimen,
     .tile--checklist {
@@ -756,14 +787,39 @@
   
   @media (max-width: 720px) {
     .site-header {
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 0.5rem;
     }
   
+    .nav-toggle {
+      display: inline-flex;
+    }
+  
+    /* mobile dropdown nav */
     .main-nav {
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      background: var(--bg-surface);
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 20;
+    }
+  
+    .main-nav.main-nav--open {
+      display: flex;
+    }
+  
+    .main-nav .nav-link {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+  
+    .main-nav .nav-link:last-child {
+      border-bottom: none;
     }
   
     .hero {

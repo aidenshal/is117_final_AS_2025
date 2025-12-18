@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Luna Skin Studio</title>
+  <meta name="description" content="Privacy policy for Luna Skin Studio client website." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">LS</span>
+        <span class="brand-name">Luna Skin Studio</span>
+      </div>
+      <nav class="nav">
+        <a href="./index.html">Client Site</a>
+        <a href="../index.html">Landing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h1 style="margin-top:0">Privacy Policy</h1>
+      <p class="subhead">Simple, clear, and only what’s needed for this class project.</p>
+
+      <div class="card">
+        <h3>What we collect</h3>
+        <p>Email, name, and whatever details you submit in the form.</p>
+
+        <h3>How we use it</h3>
+        <p>To respond to appointment requests and questions.</p>
+
+        <h3>Sharing</h3>
+        <p>We do not sell your information. If a webhook/CRM integration is enabled, your form submission may be forwarded to that tool.</p>
+
+        <h3>Contact</h3>
+        <p>If you have questions, use the form on the client site.</p>
+
+        <p style="margin-top:18px">
+          <a class="btn btn--ghost" href="./index.html">← Back to Client Site</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Luna Skin Studio. All rights reserved.</p>
+      <p class="footer-links"><a href="./index.html">Client Site</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
