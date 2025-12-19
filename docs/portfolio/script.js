@@ -5,7 +5,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 // ===== Calendly compatibility =====
 // 1) Put your Calendly link here
 // Example: "https://calendly.com/aidenshal/15min"
-const CALENDLY_URL = "";
+const CALENDLY_URL = "https://calendly.com/njoasis3/new-meeting";
 
 // If you add a Calendly URL, this will inject Calendly’s embed script + widget.
 (function initCalendly() {
