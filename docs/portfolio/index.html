@@ -291,30 +291,33 @@
     </section>
 
     <!-- CALENDLY PLACEHOLDER / COMPATIBILITY -->
-    <section id="calendly" class="section section--alt">
-      <div class="container grid">
-        <div class="col col--5">
-          <h2>Book a quick call</h2>
-          <p class="subhead">
-            This section is built for Calendly embed. Paste your Calendly link in <code>script.js</code>.
-          </p>
-          <div class="callout">
-            <strong>Authority:</strong> I focus on real deliverables—configs, automation, and clean documentation.
-          </div>
+    <!-- CALENDLY -->
+<section id="calendly" class="section section--alt">
+  <div class="container grid">
+    <div class="col col--5">
+      <h2>Book a quick call</h2>
+      <p class="subhead">
+        This section is built for Calendly embed. Paste your Calendly link in <code>script.js</code>.
+      </p>
+      <div class="callout">
+        <strong>Authority:</strong> I focus on real deliverables—configs, automation, and clean documentation.
+      </div>
+    </div>
+
+    <div class="col col--7">
+      <div class="card embed" aria-label="Calendly embed area">
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/njoasis3/new-meeting"
+          style="min-width:320px;height:450px;">
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="col col--7">
-          <!-- Calendly Embed Container -->
-    <div class="calendly-inline-widget"
-      data-url="https://calendly.com/njoasis3/new-meeting"
-      style="min-width:320px;height:450px;">
-</div>
-
-<script type="text/javascript"
-  src="https://assets.calendly.com/assets/external/widget.js"
-  async>
-</script>
-
+<!-- Calendly script (put it once, right after the section or near bottom of body) -->
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
     <!-- CONTACT / ZAPIER -->
     <section id="contact" class="section">
